@@ -14,7 +14,7 @@ public class AmazonTitle_steps {
 
     @Then("user should see proper title")
     public void user_should_see_proper_title() {
-        String title = "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
+        String title = "Amazon.com: Shopping for Electronics, Apparel, Computers, Books, DVDs & more";
         Assert.assertEquals(Driver.getDriver().getTitle(), title);
         Driver.closeDriver();
     }

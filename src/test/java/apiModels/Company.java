@@ -8,6 +8,15 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 public class Company {
 
     private Address address;
+    private String title;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public Address getAddress() {
         return address;

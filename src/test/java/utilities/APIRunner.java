@@ -13,6 +13,10 @@ public class APIRunner {
 
     private static CustomResponse cr;
 
+    public static CustomResponse getCr(){
+        return cr;
+    }
+
     public static void runGET(String uri){
         Response response = RestAssured.get(uri);
         System.out.println("STATUS: " + response.statusCode());
@@ -23,6 +27,7 @@ public class APIRunner {
         } catch (IOException e) {
             System.out.println("JSON COULDN'T MAP PROPERLY");
         }
+        cr.setJsonResponse(response.asString());
     }
 
     public static void runPOST(RequestBody body, String uri){
