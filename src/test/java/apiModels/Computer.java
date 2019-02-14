@@ -57,7 +57,7 @@ public class Computer {
 
     @Test
     public void mapping(){
-        Map<String,String> configs = new Hash<>();
+        Map<String,String> configs = new HashMap<>();
         configs.put("url", "google.com");
         configs.put("username", "jbond");
         configs.put("password", "jb123");
