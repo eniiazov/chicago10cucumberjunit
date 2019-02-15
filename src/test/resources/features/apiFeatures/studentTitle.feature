@@ -1,4 +1,5 @@
-  Feature: Title verification for students
+@smoke1
+Feature: Title verification for students
     @studentTitle
     Scenario: Student title verification
       When user hits list of students api with "http://cybertekchicago.com/student/all"
