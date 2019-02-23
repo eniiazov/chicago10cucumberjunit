@@ -46,8 +46,11 @@ public class JDBCExample {
         Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         ResultSet resultSet = statement.executeQuery("select employee_id, first_name, last_name from employees");
 
+
         ResultSetMetaData metaData = resultSet.getMetaData();
         int columnCount = metaData.getColumnCount();
+
+
         List<Map<String, Object>> table = new ArrayList<>();
 
         while(resultSet.next()){
@@ -60,7 +63,7 @@ public class JDBCExample {
             }
             table.add(map);
         }
-
+//
         for(Map<String, Object> map: table){
 
             System.out.println(map);
