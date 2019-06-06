@@ -1,4 +1,4 @@
-@amazon1 @regression @smoke
+@amazon15 @regression @smoke
 Feature: Amazon search
 
   Background: User is on the amazon homepage
