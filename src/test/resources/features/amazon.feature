@@ -4,7 +4,7 @@ Feature: Amazon search
   Background: User is on the amazon homepage
     Given User is on the amazon homepage
 
-    @account
+    @account22
   Scenario: Amazon search test
 
     When User enters headphones keyword
